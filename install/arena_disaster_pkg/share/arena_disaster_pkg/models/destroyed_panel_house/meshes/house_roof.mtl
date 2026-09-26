@@ -1,0 +1,9 @@
+newmtl Material.003
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.1 0.1 0.1
+Ns 20
+d 1
+illum 2
+map_Kd /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/models/destroyed_panel_house/textures/concrete_albedo.jpg
+

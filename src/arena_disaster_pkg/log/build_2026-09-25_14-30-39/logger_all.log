@@ -1,0 +1,104 @@
+[2.243s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'arena_disaster_pkg', '--cmake-force-configure']
+[2.243s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['arena_disaster_pkg'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=True, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ccf97743e20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ccf97743910>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ccf97743910>>)
+[7.877s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[7.877s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[7.878s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[7.878s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[7.878s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[7.878s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[7.879s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/student/ros2_ws/src/arena_disaster_pkg'
+[7.881s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[7.882s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[7.882s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[7.882s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[7.882s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[7.882s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[7.882s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[7.882s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[7.882s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[8.020s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'arena_disaster_pkg'
+[8.020s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[8.020s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[8.020s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[8.020s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[8.020s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[8.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[8.323s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[8.392s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/student/ros2_ws/install
+[8.399s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 287 installed packages in /opt/ros/humble
+[8.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[8.582s] Level 5:colcon.colcon_core.verb:set package 'arena_disaster_pkg' build argument 'cmake_args' from command line to 'None'
+[8.582s] Level 5:colcon.colcon_core.verb:set package 'arena_disaster_pkg' build argument 'cmake_target' from command line to 'None'
+[8.582s] Level 5:colcon.colcon_core.verb:set package 'arena_disaster_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[8.582s] Level 5:colcon.colcon_core.verb:set package 'arena_disaster_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[8.582s] Level 5:colcon.colcon_core.verb:set package 'arena_disaster_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[8.582s] Level 5:colcon.colcon_core.verb:set package 'arena_disaster_pkg' build argument 'cmake_force_configure' from command line to 'True'
+[8.582s] Level 5:colcon.colcon_core.verb:set package 'arena_disaster_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[8.582s] Level 5:colcon.colcon_core.verb:set package 'arena_disaster_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[8.582s] Level 5:colcon.colcon_core.verb:set package 'arena_disaster_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[8.582s] DEBUG:colcon.colcon_core.verb:Building package 'arena_disaster_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/ros2_ws/src/arena_disaster_pkg/build/arena_disaster_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': True, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg', 'merge_install': False, 'path': '/home/student/ros2_ws/src/arena_disaster_pkg', 'symlink_install': False, 'test_result_base': None}
+[8.583s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[8.585s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[8.586s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/ros2_ws/src/arena_disaster_pkg' with build type 'ament_cmake'
+[8.586s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/ros2_ws/src/arena_disaster_pkg'
+[8.592s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[8.592s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.593s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.633s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros2_ws/src/arena_disaster_pkg/build/arena_disaster_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/student/ros2_ws/src/arena_disaster_pkg -DCMAKE_INSTALL_PREFIX=/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg
+[12.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros2_ws/src/arena_disaster_pkg/build/arena_disaster_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/student/ros2_ws/src/arena_disaster_pkg -DCMAKE_INSTALL_PREFIX=/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg
+[12.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros2_ws/src/arena_disaster_pkg/build/arena_disaster_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/src/arena_disaster_pkg/build/arena_disaster_pkg -- -j4 -l4
+[12.430s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros2_ws/src/arena_disaster_pkg/build/arena_disaster_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/src/arena_disaster_pkg/build/arena_disaster_pkg -- -j4 -l4
+[12.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros2_ws/src/arena_disaster_pkg/build/arena_disaster_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/student/ros2_ws/src/arena_disaster_pkg/build/arena_disaster_pkg
+[14.716s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arena_disaster_pkg)
+[14.719s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros2_ws/src/arena_disaster_pkg/build/arena_disaster_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/student/ros2_ws/src/arena_disaster_pkg/build/arena_disaster_pkg
+[14.805s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg' for CMake module files
+[14.807s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg' for CMake config files
+[14.809s] Level 1:colcon.colcon_core.shell:create_environment_hook('arena_disaster_pkg', 'cmake_prefix_path')
+[14.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/hook/cmake_prefix_path.ps1'
+[14.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/hook/cmake_prefix_path.dsv'
+[14.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/hook/cmake_prefix_path.sh'
+[14.837s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/bin'
+[14.839s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/lib/pkgconfig/arena_disaster_pkg.pc'
+[14.840s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/lib/python3.10/site-packages'
+[14.841s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/bin'
+[14.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/package.ps1'
+[14.846s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/package.dsv'
+[14.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/package.sh'
+[14.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/package.bash'
+[14.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/package.zsh'
+[14.861s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/colcon-core/packages/arena_disaster_pkg)
+[14.862s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arena_disaster_pkg)
+[14.863s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg' for CMake module files
+[14.864s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg' for CMake config files
+[14.867s] Level 1:colcon.colcon_core.shell:create_environment_hook('arena_disaster_pkg', 'cmake_prefix_path')
+[14.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/hook/cmake_prefix_path.ps1'
+[14.872s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/hook/cmake_prefix_path.dsv'
+[14.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/hook/cmake_prefix_path.sh'
+[14.878s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/bin'
+[14.879s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/lib/pkgconfig/arena_disaster_pkg.pc'
+[14.881s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/lib/python3.10/site-packages'
+[14.882s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/bin'
+[14.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/package.ps1'
+[14.885s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/package.dsv'
+[14.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/package.sh'
+[14.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/package.bash'
+[14.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/arena_disaster_pkg/package.zsh'
+[14.900s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/ros2_ws/src/arena_disaster_pkg/install/arena_disaster_pkg/share/colcon-core/packages/arena_disaster_pkg)
+[14.904s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[14.905s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[14.905s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[14.905s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[14.925s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[14.927s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[14.927s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[14.985s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[14.986s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros2_ws/src/arena_disaster_pkg/install/local_setup.ps1'
+[14.989s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/ros2_ws/src/arena_disaster_pkg/install/_local_setup_util_ps1.py'
+[14.997s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros2_ws/src/arena_disaster_pkg/install/setup.ps1'
+[15.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros2_ws/src/arena_disaster_pkg/install/local_setup.sh'
+[15.004s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/ros2_ws/src/arena_disaster_pkg/install/_local_setup_util_sh.py'
+[15.012s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros2_ws/src/arena_disaster_pkg/install/setup.sh'
+[15.019s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros2_ws/src/arena_disaster_pkg/install/local_setup.bash'
+[15.020s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros2_ws/src/arena_disaster_pkg/install/setup.bash'
+[15.023s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros2_ws/src/arena_disaster_pkg/install/local_setup.zsh'
+[15.024s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros2_ws/src/arena_disaster_pkg/install/setup.zsh'

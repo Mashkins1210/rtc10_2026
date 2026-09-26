@@ -1,0 +1,224 @@
+[0.017s] Invoking command in '/home/student/ros2_ws/build/arena_disaster_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/student/ros2_ws/src/arena_disaster_pkg -DCMAKE_INSTALL_PREFIX=/home/student/ros2_ws/install/arena_disaster_pkg
+[0.112s] -- The C compiler identification is GNU 11.4.0
+[0.243s] -- The CXX compiler identification is GNU 11.4.0
+[0.258s] -- Detecting C compiler ABI info
+[0.369s] -- Detecting C compiler ABI info - done
+[0.379s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.380s] -- Detecting C compile features
+[0.380s] -- Detecting C compile features - done
+[0.384s] -- Detecting CXX compiler ABI info
+[0.482s] -- Detecting CXX compiler ABI info - done
+[0.491s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.491s] -- Detecting CXX compile features
+[0.492s] -- Detecting CXX compile features - done
+[0.494s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.649s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.811s] -- Configuring done
+[0.814s] -- Generating done
+[0.816s] -- Build files have been written to: /home/student/ros2_ws/build/arena_disaster_pkg
+[0.820s] Invoked command in '/home/student/ros2_ws/build/arena_disaster_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/student/ros2_ws/src/arena_disaster_pkg -DCMAKE_INSTALL_PREFIX=/home/student/ros2_ws/install/arena_disaster_pkg
+[0.822s] Invoking command in '/home/student/ros2_ws/build/arena_disaster_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/build/arena_disaster_pkg -- -j4 -l4
+[0.865s] Invoked command in '/home/student/ros2_ws/build/arena_disaster_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/build/arena_disaster_pkg -- -j4 -l4
+[0.876s] Invoking command in '/home/student/ros2_ws/build/arena_disaster_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/student/ros2_ws/build/arena_disaster_pkg
+[0.883s] -- Install configuration: ""
+[0.884s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/ament_index/resource_index/package_run_dependencies/arena_disaster_pkg
+[0.884s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/ament_index/resource_index/parent_prefix_path/arena_disaster_pkg
+[0.884s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/environment/ament_prefix_path.sh
+[0.884s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/environment/ament_prefix_path.dsv
+[0.885s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/environment/path.sh
+[0.885s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/environment/path.dsv
+[0.885s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/local_setup.bash
+[0.885s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/local_setup.sh
+[0.885s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/local_setup.zsh
+[0.886s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/local_setup.dsv
+[0.886s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/package.dsv
+[0.886s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/ament_index/resource_index/packages/arena_disaster_pkg
+[0.886s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/cmake/arena_disaster_pkgConfig.cmake
+[0.886s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/cmake/arena_disaster_pkgConfig-version.cmake
+[0.887s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/package.xml
+[0.887s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share///config
+[0.887s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share///config/bridge.yaml
+[0.887s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share///scripts
+[0.887s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share///scripts/mecanum_drive.py
+[0.888s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//launch
+[0.888s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//launch/omnimen_sim.launch.py
+[0.888s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//launch/arena_sim.launch.py
+[0.888s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//launch/spawn_omnimen.launch.py
+[0.888s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//worlds
+[0.888s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//worlds/disaster_arena.world
+[0.889s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//worlds/test.world
+[0.889s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models
+[0.889s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house
+[0.889s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/meshes
+[0.889s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/meshes/house_walls.mtl
+[0.889s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/meshes/house_roof.mtl
+[0.890s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/meshes/house_floors.obj
+[0.890s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/meshes/destroyed_panel_house.blend
+[0.890s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/meshes/house_floors.mtl
+[0.890s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/meshes/house_roof.obj
+[0.890s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/meshes/destroyed_panel_house.blend1
+[0.890s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/meshes/house_walls.obj
+[0.891s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/textures
+[0.891s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/textures/concrete_normal.png
+[0.895s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/textures/concrete_roughness.png
+[0.897s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/textures/concrete_albedo.jpg
+[0.898s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/model.config
+[0.898s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/destroyed_panel_house/model.sdf
+[0.898s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/rubble_pvc
+[0.898s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/rubble_pvc/meshes
+[0.898s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/rubble_pvc/model.config
+[0.899s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/rubble_pvc/model.sdf
+[0.899s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen_with_sensors
+[0.899s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen_with_sensors/omnimen_with_sensors.sdf
+[0.899s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen_with_sensors/model.config
+[0.899s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/qr_marker
+[0.899s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/qr_marker/model.config
+[0.900s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/qr_marker/model.sdf
+[0.900s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/water
+[0.900s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/water/meshes
+[0.900s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/water/model.config
+[0.900s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/water/oil_slick
+[0.900s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/water/oil_slick/meshes
+[0.901s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/water/oil_slick/model.config
+[0.901s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/water/oil_slick/model.sdf
+[0.901s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/water/model.sdf
+[0.901s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/overturned_fuel_truck
+[0.901s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/overturned_fuel_truck/meshes
+[0.901s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/overturned_fuel_truck/model.config
+[0.902s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/overturned_fuel_truck/model.sdf
+[0.902s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/traffic_jam
+[0.902s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/traffic_jam/meshes
+[0.902s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/traffic_jam/model.config
+[0.902s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/traffic_jam/model.sdf
+[0.902s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/fallen_birch_tree
+[0.903s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/fallen_birch_tree/meshes
+[0.903s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/fallen_birch_tree/model.config
+[0.903s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/fallen_birch_tree/model.sdf
+[0.903s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/bridge_crossing
+[0.903s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/bridge_crossing/meshes
+[0.903s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/bridge_crossing/meshes/bridge_railings.mtl
+[0.903s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/bridge_crossing/meshes/bridge_deck.obj
+[0.904s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/bridge_crossing/meshes/bridge_markings.obj
+[0.904s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/bridge_crossing/meshes/bridge_deck.mtl
+[0.904s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/bridge_crossing/meshes/bridge_markings.mtl
+[0.904s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/bridge_crossing/meshes/bridge_railings.obj
+[0.904s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/bridge_crossing/textures
+[0.904s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/bridge_crossing/textures/bitumen_albedo.jpg
+[0.904s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/bridge_crossing/model.config
+[0.905s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/bridge_crossing/model.sdf
+[0.905s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen
+[0.905s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes
+[0.905s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/head_base_igs_4______________1.stl
+[0.908s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/Kamera_1______________1.stl
+[0.909s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/stand_8x2_igs_25______________1.stl
+[0.909s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/_____________Mecanum_4______________1.stl
+[0.909s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/________________Mecanum__________________________2______________1.stl
+[0.916s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/Section_1______________1.stl
+[0.918s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/motor_board_igs_18______________1.stl
+[0.918s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/base_igs_3______________1.stl
+[0.937s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/laser_igs_7______________1.stl
+[0.937s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/motor_igs_17______________1.stl
+[0.938s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/Bein_1______________1.stl
+[0.938s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/Woodscrews_GB_TYPE136_M2X6_N_igs_10______________1.stl
+[0.938s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/door_wago_1______________1.stl
+[0.940s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/______mx_106_1______________1.stl
+[0.940s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/connector_1_25_4pin_igs_19______________1.stl
+[0.940s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/Cam_Schale_Front_1______________1.stl
+[0.942s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/detector_mount_igs_5______________1.stl
+[0.943s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/motherboard_igs_15______________1.stl
+[0.943s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/laser_mount_igs_8______________1.stl
+[0.944s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/level_plate_1______________1.stl
+[0.946s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/case_akb_1______________2.stl
+[0.947s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/ROUE_MX106T_2______________1.stl
+[0.948s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/bottom_lid_igs_20______________1.stl
+[0.949s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/wheel_igs_32______________1.stl
+[0.950s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/connecteur_dynamixel_5______________1.stl
+[0.951s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/______________________3______________1.stl
+[0.953s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/_____________Mecanum_3______________1.stl
+[0.954s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/________________Mecanum_________________________2______________1.stl
+[0.961s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/detector_igs_6______________1.stl
+[0.961s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/connector_1_25_3pin_igs_16______________1.stl
+[0.961s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/MX_106T_1______________1.stl
+[0.962s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/________________Mecanum__________________________1______________1.stl
+[0.969s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/Part22_2______________1.stl
+[0.969s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/head_igs_9______________1.stl
+[0.972s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/______________________12______________1.stl
+[0.975s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/Cam_Schale_Deckel_1______________1.stl
+[0.976s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/level_plate___________1______________1.stl
+[0.979s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/hex_spacer_standoff_nut_M4_L20_1______________1.stl
+[0.990s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/Insert_M3___encastrer_long_5mm_4______________1.stl
+[1.003s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/devboard_igs_30______________1.stl
+[1.004s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/connector_7pin_2_5_igs_29______________1.stl
+[1.004s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/rubber_igs_31______________1.stl
+[1.005s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/stand_15x2_igs_21______________1.stl
+[1.005s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/meshes/________________Mecanum___________________________1______________1.stl
+[1.011s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/model.config
+[1.011s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/urdf
+[1.012s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/urdf/omnimen.urdf
+[1.012s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/launch
+[1.012s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/omnimen/launch/omnimen.launch
+[1.012s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass
+[1.012s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/meshes
+[1.012s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/meshes/tower_windows.obj
+[1.012s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/meshes/tower_walls.obj
+[1.013s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/meshes/tower_windows.mtl
+[1.013s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/meshes/tower_floors.mtl
+[1.013s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/meshes/tower_walls.mtl
+[1.013s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/meshes/tower_roof.obj
+[1.013s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/meshes/tower_floors.obj
+[1.013s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/meshes/tower_roof.mtl
+[1.014s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/textures
+[1.014s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/textures/tower_glass_baked.png
+[1.014s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/textures/concrete_normal.png
+[1.018s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/textures/concrete_roughness.png
+[1.020s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/textures/concrete_albedo.jpg
+[1.020s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/model.config
+[1.021s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//models/tower_glass/model.sdf
+[1.021s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials
+[1.021s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures
+[1.021s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/bitumen_albedo.jpg
+[1.021s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/concrete_normal.png
+[1.025s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/bitumen_roughness.png
+[1.026s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/asphalt_albedo.jpg
+[1.027s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/asphalt_normal.png
+[1.033s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/grass_normal.png
+[1.039s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/bitumen_normal.png
+[1.044s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/concrete_roughness.png
+[1.046s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/grass_roughness.png
+[1.048s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/grass_albedo.jpg
+[1.049s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends
+[1.049s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/bitumen_1k.blend
+[1.049s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures
+[1.049s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/concrete_wall_009_nor_gl_1k.exr
+[1.051s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/bitumen_diff_1k.jpg
+[1.052s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/asphalt_track_rough_1k.png
+[1.053s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/asphalt_track_diff_1k.jpg
+[1.054s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/concrete_wall_009_rough_1k.exr
+[1.055s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/asphalt_track_nor_gl_1k.exr
+[1.057s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/concrete_wall_009_diff_1k.jpg
+[1.058s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/sparse_grass_nor_gl_1k.png
+[1.064s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/concrete_wall_009_rough_1k.png
+[1.066s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/bitumen_rough_1k.png
+[1.067s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/bitumen_nor_gl_1k.exr
+[1.069s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/asphalt_track_disp_1k.png
+[1.071s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/sparse_grass_nor_gl_1k.exr
+[1.074s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/sparse_grass_rough_1k.png
+[1.075s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/bitumen_rough_1k.exr
+[1.075s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/sparse_grass_diff_1k.jpg
+[1.077s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/concrete_wall_009_nor_gl_1k.png
+[1.080s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/concrete_wall_009_disp_1k.png
+[1.082s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/sparse_grass_disp_1k.png
+[1.084s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/asphalt_track_nor_gl_1k.png
+[1.089s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/bitumen_nor_gl_1k.png
+[1.095s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/sparse_grass_rough_1k.exr
+[1.096s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/asphalt_track_rough_1k.exr
+[1.096s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/bitumen_disp_1k.png
+[1.098s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/textures/sparse_grass_mask_1k.png
+[1.100s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/asphalt_track_1k.blend
+[1.100s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/concrete_wall_009_1k.blend
+[1.100s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/blends/sparse_grass_1k.blend
+[1.100s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/asphalt_roughness.png
+[1.102s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/textures/concrete_albedo.jpg
+[1.103s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg//materials/cubemaps
+[1.103s] -- Installing: /home/student/ros2_ws/install/arena_disaster_pkg/lib/arena_disaster_pkg/mecanum_drive.py
+[1.105s] Invoked command in '/home/student/ros2_ws/build/arena_disaster_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/student/ros2_ws/build/arena_disaster_pkg

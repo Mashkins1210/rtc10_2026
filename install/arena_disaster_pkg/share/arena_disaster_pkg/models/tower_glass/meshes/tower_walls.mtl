@@ -1,0 +1,7 @@
+newmtl Glass
+Ka 0.6 0.6 0.6
+Kd 0.55 0.72 0.85
+Ks 0.1 0.1 0.1
+Ns 20
+d 1
+illum 2
