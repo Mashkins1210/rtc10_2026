@@ -1,0 +1,7 @@
+newmtl Material.002
+Ka 0.6 0.6 0.6
+Kd 0.35 0.35 0.35
+Ks 0.1 0.1 0.1
+Ns 20
+d 1
+illum 2

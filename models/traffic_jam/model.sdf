@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="traffic_jam">
+    <link name="link">
+      <visual name="car_yellow">
+        <geometry><box><size>0.12 0.06 0.05</size></box></geometry>
+        <material><ambient>0.92 0.80 0.06</ambient><diffuse>0.92 0.80 0.06</diffuse><shader type="pixel"/></material>
+      </visual>
+      <visual name="car_blue">
+        <pose>0.15 0 0 0 0 0</pose>
+        <geometry><box><size>0.14 0.06 0.05</size></box></geometry>
+        <material><ambient>0.14 0.32 0.72</ambient><diffuse>0.14 0.32 0.72</diffuse><shader type="pixel"/></material>
+      </visual>
+      <visual name="car_red">
+        <pose>-0.15 0 0 0 0 0</pose>
+        <geometry><box><size>0.12 0.06 0.05</size></box></geometry>
+        <material><ambient>0.78 0.12 0.12</ambient><diffuse>0.78 0.12 0.12</diffuse><shader type="pixel"/></material>
+      </visual>
+      <visual name="car_green">
+        <pose>0 0.12 0 0 0 0</pose>
+        <geometry><box><size>0.12 0.06 0.05</size></box></geometry>
+        <material><ambient>0.12 0.52 0.14</ambient><diffuse>0.12 0.52 0.14</diffuse><shader type="pixel"/></material>
+      </visual>
+      <collision name="collision">
+        <geometry><box><size>0.4 0.25 0.05</size></box></geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

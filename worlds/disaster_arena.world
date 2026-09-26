@@ -1,0 +1,290 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="disaster_arena">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.005</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+    </scene>
+    <light name="sun" type="directional">
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <!-- Земля (пол) -->
+    <model name="ground">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>4.03 4.03</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>4.03 4.03</size></plane></geometry>
+          <material><ambient>0.35 0.35 0.35 1</ambient><diffuse>0.35 0.35 0.35 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/><pbr><metal><albedo_map>/home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/materials/textures/asphalt_albedo.jpg</albedo_map><metalness>0.0</metalness><roughness>0.9</roughness></metal></pbr></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- МОДЕЛИ -->
+    <include>
+      <name>tower_glass</name>
+      <uri>model://tower_glass</uri>
+      <pose>0.5 -0.77 0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>destroyed_panel_house</name>
+      <uri>model://destroyed_panel_house</uri>
+      <pose>-0.98 0.3 0 0 0 -1.59</pose>
+    </include>
+    
+    <include>
+      <name>bridge_crossing_1</name>
+      <uri>model://bridge_crossing</uri>
+      <pose>0.6 1.2 0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>bridge_crossing_2</name>
+      <uri>model://bridge_crossing</uri>
+      <pose>2 0.6 0 0 0 1.57</pose>
+    </include>
+  
+    <!-- Периметральные стенки -->
+    <model name="wall_top">
+      <pose>0 2.015 0.2 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>4.06 0.03 0.4</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/><pbr><metal><albedo_map>/home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/materials/textures/concrete_albedo.jpg</albedo_map><metalness>0.0</metalness><roughness>0.9</roughness></metal></pbr></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>4.06 0.03 0.4</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+    
+    <model name="wall_bottom">
+      <pose>0 -2.015 0.2 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>4.06 0.03 0.4</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/><pbr><metal><albedo_map>/home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/materials/textures/concrete_albedo.jpg</albedo_map><metalness>0.0</metalness><roughness>0.9</roughness></metal></pbr></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>4.06 0.03 0.4</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+    
+    <model name="wall_right">
+      <pose>2.015 0 0.2 0 0 1.5708</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>4.06 0.03 0.4</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/><pbr><metal><albedo_map>/home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/materials/textures/concrete_albedo.jpg</albedo_map><metalness>0.0</metalness><roughness>0.9</roughness></metal></pbr></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>4.06 0.03 0.4</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+    
+    <model name="wall_left">
+      <pose>-2.015 0 0.2 0 0 1.5708</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>4.06 0.03 0.4</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/><pbr><metal><albedo_map>/home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/materials/textures/concrete_albedo.jpg</albedo_map><metalness>0.0</metalness><roughness>0.9</roughness></metal></pbr></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>4.06 0.03 0.4</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Газоны -->
+    <model name="lawn_1">
+    <static>true</static>
+      <pose>0.5 -0.77 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.78 0.78 0.01</size></box></geometry>
+          <material><ambient>0.18 0.62 0.2 1</ambient><diffuse>0.18 0.62 0.2 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/><pbr><metal><albedo_map>/home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/materials/textures/grass_albedo.jpg</albedo_map><metalness>0.0</metalness><roughness>0.9</roughness></metal></pbr></material>
+        </visual>
+      </link>
+    </model>
+    
+    <model name="lawn_2">
+    <static>true</static>
+      <pose>-0.9713 0.6473 0.01 0 0 -0.0229</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.78 0.78 0.01</size></box></geometry>
+          <material><ambient>0.18 0.62 0.2 1</ambient><diffuse>0.18 0.62 0.2 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/><pbr><metal><albedo_map>/home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/materials/textures/grass_albedo.jpg</albedo_map><metalness>0.0</metalness><roughness>0.9</roughness></metal></pbr></material>
+        </visual>
+      </link>
+    </model>
+    
+    <model name="lawn_3">
+    <static>true</static>
+      <pose>0.6 0.8 -0.002 0 0 -1.57</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.78 0.78 0.01</size></box></geometry>
+          <material><ambient>0.18 0.62 0.2 1</ambient><diffuse>0.18 0.62 0.2 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/><pbr><metal><albedo_map>/home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/materials/textures/grass_albedo.jpg</albedo_map><metalness>0.0</metalness><roughness>0.9</roughness></metal></pbr></material>
+        </visual>
+      </link>
+    </model>
+    
+    <model name="lawn_4">
+    <static>true</static>
+      <pose>-0.9874 -0.1161 0.01 0 0 -0.0213</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.78 0.78 0.01</size></box></geometry>
+          <material><ambient>0.18 0.62 0.2 1</ambient><diffuse>0.18 0.62 0.2 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/><pbr><metal><albedo_map>/home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/materials/textures/grass_albedo.jpg</albedo_map><metalness>0.0</metalness><roughness>0.9</roughness></metal></pbr></material>
+        </visual>
+      </link>
+    </model>
+    
+    <model name="lawn_5">
+    <static>true</static>
+      <pose>0.8 0.57 -0.002 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.78 0.78 0.01</size></box></geometry>
+          <material><ambient>0.18 0.62 0.2 1</ambient><diffuse>0.18 0.62 0.2 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/><pbr><metal><albedo_map>/home/student/ros2_ws/install/arena_disaster_pkg/share/arena_disaster_pkg/materials/textures/grass_albedo.jpg</albedo_map><metalness>0.0</metalness><roughness>0.9</roughness></metal></pbr></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ПРЕПЯТСТВИЯ -->
+    <!-- Traffic jam (4 машины) -->
+    
+    <!-- Rubble PVC (3 фрагмента) -->
+    
+    <!-- Fallen birch tree -->
+    
+    <!-- Overturned fuel truck -->
+    
+    <!-- Oil slick (без коллизии) -->
+    
+    
+    <!-- ПРЕПЯТСТВИЯ -->
+    <include>
+      <name>traffic_jam</name>
+      <uri>model://traffic_jam</uri>
+      <pose>-1.6 0.8 0.0225 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>rubble_pvc</name>
+      <uri>model://rubble_pvc</uri>
+      <pose>-1.67 1.13 0.075 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>fallen_birch_tree</name>
+      <uri>model://fallen_birch_tree</uri>
+      <pose>-0.2 -1 0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>overturned_fuel_truck</name>
+      <uri>model://overturned_fuel_truck</uri>
+      <pose>0.1748 0.4348 0 0 0 1.57</pose>
+    </include>
+    
+    <include>
+      <name>water</name>
+      <uri>model://water</uri>
+      <pose>0.86 0.82 -0.001 0 0 0</pose>
+    </include>
+    
+  <!-- QR-маркер на торце дома (дом в -1.2, торец в -0.5) -->
+    <model name="qr_marker">
+    <static>true</static>
+      <pose>-0.6 0.086 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><plane><normal>1 0 0</normal><size>0.12 0.12</size></plane></geometry>
+          <material><ambient>1 1 1</ambient><diffuse>1 1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  <model name="road_markings">
+    <static>true</static>
+    <link name="link">
+      <visual name="m1"><pose>-1.6 -1.5 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m2"><pose>-1.6 -1.0 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m3"><pose>-1.6 -0.5 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m4"><pose>-1.6 0.0 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m5"><pose>-1.6 0.5 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m6"><pose>-1.6 1.0 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m7"><pose>-1.6 1.5 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m8"><pose>1.6 -1.5 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m9"><pose>1.6 -1.0 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m10"><pose>1.6 -0.5 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m11"><pose>1.6 0.0 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m12"><pose>1.6 0.5 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m13"><pose>1.6 1.0 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m14"><pose>1.6 1.5 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m15"><pose>-1.5 -1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m16"><pose>-1.0 -1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m17"><pose>-0.5 -1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m18"><pose>0.0 -1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m19"><pose>0.5 -1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m20"><pose>1.0 -1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m21"><pose>1.5 -1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m22"><pose>-1.5 1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m23"><pose>-1.0 1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m24"><pose>-0.5 1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m25"><pose>0.0 1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m26"><pose>0.5 1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m27"><pose>1.0 1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m28"><pose>1.5 1.6 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m29"><pose>0 -1.5 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m30"><pose>0 -0.5 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m31"><pose>0 0.0 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m32"><pose>0 0.5 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m33"><pose>0 1.5 0.004 0 0 0</pose><geometry><box><size>0.06 0.3 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m34"><pose>-1.5 0 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m35"><pose>-0.5 0 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m36"><pose>0.0 0 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m37"><pose>0.5 0 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m38"><pose>1.0 0 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m39"><pose>1.5 0 0.004 0 0 0</pose><geometry><box><size>0.3 0.06 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m40"><pose>-0.4 0.8 0.004 0 0 0</pose><geometry><box><size>0.12 0.5 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m41"><pose>-0.4 -0.8 0.004 0 0 0</pose><geometry><box><size>0.12 0.5 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m42"><pose>-0.2 0.8 0.004 0 0 0</pose><geometry><box><size>0.12 0.5 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m43"><pose>-0.2 -0.8 0.004 0 0 0</pose><geometry><box><size>0.12 0.5 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m44"><pose>0.0 0.8 0.004 0 0 0</pose><geometry><box><size>0.12 0.5 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m45"><pose>0.0 -0.8 0.004 0 0 0</pose><geometry><box><size>0.12 0.5 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m46"><pose>0.20000000000000007 0.8 0.004 0 0 0</pose><geometry><box><size>0.12 0.5 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m47"><pose>0.20000000000000007 -0.8 0.004 0 0 0</pose><geometry><box><size>0.12 0.5 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m48"><pose>0.4 0.8 0.004 0 0 0</pose><geometry><box><size>0.12 0.5 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m49"><pose>0.4 -0.8 0.004 0 0 0</pose><geometry><box><size>0.12 0.5 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m50"><pose>-0.8 -0.4 0.004 0 0 0</pose><geometry><box><size>0.5 0.12 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m51"><pose>-0.8 -0.2 0.004 0 0 0</pose><geometry><box><size>0.5 0.12 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m52"><pose>-0.8 0.0 0.004 0 0 0</pose><geometry><box><size>0.5 0.12 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m53"><pose>-0.8 0.20000000000000007 0.004 0 0 0</pose><geometry><box><size>0.5 0.12 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m54"><pose>-0.8 0.4 0.004 0 0 0</pose><geometry><box><size>0.5 0.12 0.002</size></box></geometry><material><ambient>0.90 0.80 0.10 1</ambient><diffuse>0.90 0.80 0.10 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m55"><pose>1.0 -1.2 0.004 0 0 0</pose><geometry><box><size>0.06 0.5 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m56"><pose>1.2 -1.2 0.004 0 0 0</pose><geometry><box><size>0.06 0.5 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m57"><pose>1.4 -1.2 0.004 0 0 0</pose><geometry><box><size>0.06 0.5 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+      <visual name="m58"><pose>1.5999999999999999 -1.2 0.004 0 0 0</pose><geometry><box><size>0.06 0.5 0.002</size></box></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse><specular>0.1 0.1 0.1 1</specular><shader type="pixel"/></material></visual>
+    </link>
+  </model>
+
+    <!-- Робот OmniMen -->
+    </world>
+</sdf>
+
+    <!-- Робот OmniMen -->
+    </world>
